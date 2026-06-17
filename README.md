@@ -36,7 +36,7 @@ Follow these steps to run the project locally on your machine.
 ### 1. Navigate to the Project Directory
 Open your terminal and navigate to this folder:
 ```bash
-cd ~/Practice/AI/resume_parser/ResumeAnalyzer/Flask_ResumeParser
+cd /Flask_ResumeParser
 ```
 
 ### 2. Activate the Virtual Environment
