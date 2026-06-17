@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Evaluation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Candidate Evaluation System</h1>
+        <div class="subtitle">Upload documentation to predict job domain and extract skills.</div>
+
+        {% if err %}
+            <div class="error-msg">{{ err }}</div>
+        {% endif %}
+
+        <form action="/analyze" method="post" enctype="multipart/form-data">
+            
+            <div class="form-group" style="margin-top: 15px;">
+                <label>Resume Upload (PDF)</label>
+                <input type="file" name="file" accept=".pdf">
+            </div>
+
+            <div class="divider">or manual entry</div>
+
+            <div class="form-group">
+                <label>Resume Plain Text</label>
+                <textarea name="raw_text" rows="8" placeholder="Paste applicant resume text here..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Evaluate Candidate</button>
+        </form>
+    </div>
+
+</body>
+</html>

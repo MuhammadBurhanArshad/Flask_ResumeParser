@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .keyword-tag {
+            display: inline-block;
+            background-color: #e1ecf4;
+            color: #0366d6;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #c8e1ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Evaluation Summary</h1>
+        <div class="subtitle">Results based on global candidate data patterns.</div>
+
+        <div class="score-circle">
+            {{ score }}%
+        </div>
+
+        <div class="result-cards">
+            <div class="res-card">
+                <span>Predicted Domain</span>
+                <strong>{{ category }}</strong>
+            </div>
+            <div class="res-card">
+                <span>Data Group</span>
+                <strong>Cluster {{ cluster }}</strong>
+            </div>
+        </div>
+
+        <div class="res-card" style="margin-bottom: 30px; text-align: left;">
+            <span style="margin-bottom: 10px;">Extracted Keywords</span>
+            <div>
+                {% for kw in keywords %}
+                    <span class="keyword-tag">{{ kw }}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <a href="/" class="back-btn">Evaluate Next Candidate</a>
+    </div>
+
+</body>
+</html>
