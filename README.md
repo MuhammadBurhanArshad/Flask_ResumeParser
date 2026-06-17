@@ -8,11 +8,10 @@ The AI Resume Analyzer solves the real-world problem of manual resume screening 
 
 ### 📸 Application Screenshots
 
-*(Placeholder for Screenshot 1: Application Dashboard / Upload Screen)*  
-![Screenshot 1 Placeholder](#)
+<img width="1349" height="691" alt="image" src="https://github.com/user-attachments/assets/7f61b1e8-f16a-4a67-a5a6-ef7b6df9d1e2" />
 
-*(Placeholder for Screenshot 2: AI Analysis Results Screen)*  
-![Screenshot 2 Placeholder](#)
+<img width="1349" height="867" alt="image" src="https://github.com/user-attachments/assets/8214cf9c-4bb3-4f1d-9ffe-f0c3460e0c38" />
+
 
 ### 🧠 AI Integrations & Algorithms Used
 - **TF-IDF (Term Frequency-Inverse Document Frequency)**: Used to dynamically extract the top 10 keywords and skills from the resume text without relying on manual, static keyword lists.
